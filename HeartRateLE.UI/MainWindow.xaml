@@ -1,0 +1,62 @@
+﻿<Window x:Class="HeartRateLE.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HeartRateLE.UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="640" HorizontalAlignment="Center" VerticalAlignment="Center" >
+    <Grid >
+        <StackPanel x:Name="TopStackPanel">
+            <TextBlock x:Name="TxtStatus"
+                       TextWrapping="Wrap"
+                       Text="disconnected"
+                       HorizontalAlignment="Center"
+                       Margin="0,10,0,0"/>
+            <TextBlock x:Name="TxtBattery"
+                       TextWrapping="Wrap"
+                       Text="battery level: --"
+                       HorizontalAlignment="Center"
+                       Margin="0,10,0,0"/>
+            <TextBlock x:Name="TxtHr"
+                       TextWrapping="Wrap"
+                       Text="--"
+                       HorizontalAlignment="Center"
+                       Margin="0,40"
+                       FontSize="106.667"/>
+            <Button x:Name="PairDeviceButton"
+                    Content="Connect Device"
+                    IsEnabled="True"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Stretch"
+                    Width="100"
+                    Margin="0,0,10,10"
+                    Click="PairDeviceButton_Click"/>
+            <Button x:Name="BtnStart"
+                    Content="Start"
+                    IsEnabled="False"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Stretch"
+                    Width="100"
+                    Margin="0,0,10,10"
+                    Click="BtnStart_Click"/>
+            <Button x:Name="BtnStop"
+                    Content="Stop"
+                    IsEnabled="False"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Stretch"
+                    Width="100"
+                    Margin="0,0,10,10"
+                    Click="BtnStop_Click"/>
+            <Button x:Name="BtnReadInfo"
+                    Content="Update Info"
+                    IsEnabled="False"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Stretch"
+                    Width="100"
+                    Margin="0,0,10,10"
+                    Click="BtnReadInfo_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
